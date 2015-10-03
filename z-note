@@ -1,0 +1,34 @@
+
+********************************************************************************
+1. 启动tomcat时，自动把jar包导入WEB-INF的lib文件夹下
+You need to add the "Maven Dependency" in the Deployement Assembly
+
+right click on your project and choose properties.
+click on Deployement Assembly.
+click add
+click on "Java Build Path Entries"
+select Maven Dependencies"
+click Finish.
+That it!! rebuild and deploy again
+
+********************************************************************************
+2. eclipse装tomcat
+下载tomcat，根据RUNNING.txt搭系统环境
+在window-preference-server-running...environment下加入tomcat根目录
+
+********************************************************************************
+
+maven update change java version
+http://stackoverflow.com/questions/14804945/maven-build-path-specifies-execution-environment-j2se-1-5-even-though-i-chang
+********************************************************************************
+1. create a maven quick start project.
+2. import all the maven dependencies
+3. right click project and open properties
+	a. java build path --> remove old JRE system library --> add Library --> JRE 	system library
+	b. java compiler --> change to new version
+	c. project Facets --> check Dynamic Web Module--> right tab Runtimes check Apache 		Tomcat
+	d. Deployment Assembly --> Java Build Path Entries --> Maven Dependencies
+4. 
+	a. click tomcat server on console, change server locations to use tomcat installtion E:\apache-tomcat-7.0.63\apache-tomcat-7.0.63
+	b. change delpoy path to webapps
+********************************************************************************
