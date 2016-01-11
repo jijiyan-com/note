@@ -1,0 +1,3 @@
+1 AWS中RDS修改mysql的编码
+首先找到RDS的参数组，新建一个参数组，然后编辑参数，找到character-set开头的所有项，修改其配置为utf8 或者utf8_general_ci
+http://blog.csdn.net/gsying1474/article/details/46651001
