@@ -35,6 +35,7 @@ http://stackoverflow.com/questions/14804945/maven-build-path-specifies-execution
 4. 
 	a. click tomcat server on console, change server locations to use tomcat installtion E:\apache-tomcat-7.0.63\apache-tomcat-7.0.63
 	b. change delpoy path to webapps
+	note: need to do tomcat server clean before that
 ********************************************************************************
 5. add src/main/resources fold
 	a. add resources folder under src > main
